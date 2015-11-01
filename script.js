@@ -22,7 +22,7 @@ function task3 () {
 	var result = 0;
 	if (a >= b) {
 		document.querySelector("#t3").className += " has-error";
-		document.querySelector("#ans3").innerHTML = "А должно быть больше В";
+		document.querySelector("#ans3").innerHTML = "А должно быть меньше В";
 		return;
 	}
 	document.querySelector("#t3").className = "form-inline";
