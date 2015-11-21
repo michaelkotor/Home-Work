@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tasks</title>
+	<meta charset="utf-8">
+</head>
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+<script type="text/javascript" src="script.js"></script>
+<body style="padding: 50px 0;">
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Home Work</a>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="test.html">Тест</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="page-header"><h1>Задание 1</h1></div>
+		<p>Вводим число и определяем: число двузначное или четырехзначное или пятизначное.<br/>
+			Ответ программы: Число двузначное или четырехзначное или пятизначное.<br/>
+			Иначе: Число не двузначное или четырехзначное или пятизначное.</p>
+		<form  onsubmit="task1(); return false;" class="form-inline" id="t1">
+			<input class="form-control" placeholder="Введите целое число" id="n" type="number"/>
+			<input type="submit" class="btn btn-success" placeholder="Отправить" />
+		</form>
+		<h3>Ответ: <span id="ans1"></span></h3>
+	</div>
+	<div class="container">
+		<div class="page-header"><h1>Задание 2</h1></div>
+		<p>Вывести числа Фибоначи с первого по восьмое.</p>
+		<form  onsubmit="task2(); return false;" class="form-inline">
+			<input type="submit" class="btn btn-success" value="Запустить программу" />
+		</form>
+		<h3>Ответ: <span id="ans2"></span></h3>
+	</div>
+	<div class="container">
+		<div class="page-header"><h1>Задание 3</h1></div>
+		<p>Вывести сумму с А по В (А<В). Циклом и через формулу.</p>
+		<form  onsubmit="task3(); return false;" class="form-inline" id="t3">
+			<input class="form-control" placeholder="Введите A" id="a" type="number"/>
+			<input class="form-control" placeholder="Введите B" id="b" type="number"/>
+			<input type="submit" class="btn btn-success" value="Отправить" />
+		</form>
+		<h3>Ответ: <span id="ans3"></span></h3>
+	</div>
+</body>
+</html>
