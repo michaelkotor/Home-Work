@@ -1,5 +1,11 @@
 function task1 () {
 	var n = document.querySelector("#n").value;
+	if (n == "") {
+		document.querySelector("#t1").className += " has-error";
+		document.querySelector("#ans1").innerHTML = "";
+		return;
+	}
+	document.querySelector("#t1").className = "form-inline has-success";
 	n = Math.abs(n);
 	if (n > 9 && n < 100) document.querySelector("#ans1").innerHTML = "Двузначное";
 	else if (n > 999 && n < 10000) document.querySelector("#ans1").innerHTML = "Четырёхзначное";
@@ -17,15 +23,17 @@ function task2 () {
 	document.querySelector("#ans2").innerHTML = result;
 }
 function task3 () {
-	var a = parseInt(document.querySelector("#a").value);
-	var b = parseInt(document.querySelector("#b").value);
+	var a = document.querySelector("#a").value;
+	var b = document.querySelector("#b").value;
 	var result = 0;
-	if (a >= b) {
+	if (a >= b || a == "" || b == "") {
 		document.querySelector("#t3").className += " has-error";
-		document.querySelector("#ans3").innerHTML = "А должно быть меньше В";
+		document.querySelector("#ans3").innerHTML = "";
 		return;
 	}
-	document.querySelector("#t3").className = "form-inline";
+	a = parseInt(a);
+	b = parseInt(b);
+	document.querySelector("#t3").className = "form-inline has-success";
 	for (var i = a; i <= b; i++) 
 		result = result + i;
 	document.querySelector("#ans3").innerHTML = (b - a + 1)*(a + b) / 2 + " " + result;

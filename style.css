@@ -1,0 +1,9 @@
+input[name='inpt'][type="radio"], input[name='inpt'][type="checkbox"]{
+    width: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+input[type="submit"] {
+	margin-top: 20px;
+}
