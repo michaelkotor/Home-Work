@@ -7,3 +7,6 @@ input[name='inpt'][type="radio"], input[name='inpt'][type="checkbox"]{
 input[type="submit"] {
 	margin-top: 20px;
 }
+input:hover:disabled {
+	cursor: default;
+}
